@@ -1,0 +1,17 @@
+{
+  "nodemonConfig": {
+    "ext": "cs",
+    "quiet": true,
+    "signal": "SIGTERM",
+    "exec": "dotnet run || exit 1",
+    "effects": {
+      "start": "clear"
+    },
+    "events": {
+      "start": "clear"
+    }
+  },
+  "scripts": {
+    "d": "cmd/watchapp.sh"
+  }
+}
