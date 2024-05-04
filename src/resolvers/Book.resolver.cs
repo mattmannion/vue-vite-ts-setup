@@ -3,7 +3,8 @@ using Models;
 namespace Resolvers;
 
 public class BookQuery {
-  public Models.Book GetBook() {
+  [GraphQLName("GetBook")]
+  public Book GetBook() {
     return new Book {
       Title = "C# in depth.",
       Author = new Author {
