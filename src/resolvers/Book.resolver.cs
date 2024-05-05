@@ -2,6 +2,7 @@ using Models;
 
 namespace Resolvers;
 
+[ExtendObjectType(typeof(Queries))]
 public class BookQuery {
   [GraphQLName("GetBook")]
   public Book GetBook() {
