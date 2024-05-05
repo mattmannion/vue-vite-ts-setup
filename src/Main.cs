@@ -17,4 +17,4 @@ app.ServeGraphiQLPlayground();
 
 app.MapGraphQL();
 
-app.Run();
+app.Run("http://localhost:7890");

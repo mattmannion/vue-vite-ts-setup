@@ -12,7 +12,9 @@
     }
   },
   "scripts": {
-    "d": "nodemon",
-    "w": "cmd/watchapp.sh"
+    "p": "cmd/publish.sh",
+    "pr": "cmd/publish.sh && cmd/run-release.sh",
+    "w": "cmd/watchapp.sh",
+    "d": "nodemon"
   }
 }
