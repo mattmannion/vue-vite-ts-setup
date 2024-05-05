@@ -5,7 +5,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services
     .AddGraphQLServer()
-    .AddQueryType<BookQuery>();
+    .AddQueries()
+    .AddMutations();
 
 var app = builder.Build();
 
