@@ -2,10 +2,12 @@ using Models;
 
 namespace Resolvers;
 
-[ExtendObjectType(typeof(Queries))]
+[ExtendObjectType(typeof(Query))]
 public class BookQuery {
-  [GraphQLName("GetBook")]
-  public Book GetBook() {
+  [GraphQLNonNullType]
+  [GraphQLDescription("Returns one book")]
+  [GraphQLName("BookGet")]
+  public Book BookGet() {
     return new Book {
       Title = "C# in depth.",
       Author = new Author {
