@@ -12,7 +12,8 @@ var app = builder.Build();
 
 app.UseRouting();
 
-app.UseGraphiQLMiddleware(System.IO.Path.Combine("src/assets", "graphiql.html"));
+app.ServeStaticAssets();
+app.ServeGraphiQLPlayground();
 
 app.MapGraphQL();
 

@@ -21,10 +21,11 @@ public class GraphiQLMiddleware {
 }
 
 public static class GraphiQLMiddlewareExtensions {
-  public static IApplicationBuilder UseGraphiQLMiddleware(
-    this IApplicationBuilder builder,
-    string indexPath
-    ) {
-    return builder.UseMiddleware<GraphiQLMiddleware>(indexPath);
+  public static IApplicationBuilder ServeGraphiQLPlayground(
+    this IApplicationBuilder builder
+  ) {
+    return builder.UseMiddleware<GraphiQLMiddleware>(
+      System.IO.Path.Combine("src/assets", "graphiql.html")
+    );
   }
 }
