@@ -12,6 +12,7 @@
     }
   },
   "scripts": {
-    "d": "nodemon"
+    "d": "nodemon",
+    "w": "cmd/watchapp.sh"
   }
 }
