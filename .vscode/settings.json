@@ -1,0 +1,13 @@
+{
+  "omnisharp.loggingLevel": "warning",
+  "omnisharp.organizeImportsOnFormat": true,
+  "omnisharp.enableEditorConfigSupport": false,
+  "dotnet.server.useOmnisharp": true,
+  "dotnet.backgroundAnalysis.analyzerDiagnosticsScope": "none",
+  "dotnet.backgroundAnalysis.compilerDiagnosticsScope": "none",
+  "csharp.maxProjectFileCountForDiagnosticAnalysis": 1,
+  "csharp.showOmnisharpLogOnError": false,
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  }
+}
