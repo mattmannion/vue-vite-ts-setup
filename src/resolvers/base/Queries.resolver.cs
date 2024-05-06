@@ -13,6 +13,6 @@ public static class QueryConfiguration {
   public static IRequestExecutorBuilder AddQueries(this IRequestExecutorBuilder builder) {
     return builder
         .AddQueryType<Query>()
-        .AddTypeExtension<BookQuery>();
+        .AddTypeExtension<UserQuery>();
   }
 }

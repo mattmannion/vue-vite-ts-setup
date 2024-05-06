@@ -4,6 +4,7 @@ using Resolvers;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services
+    .AddDbContext<PgDbContext>()
     .AddGraphQLServer()
     .AddQueries()
     .AddMutations();
